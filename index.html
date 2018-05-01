@@ -9,14 +9,19 @@
 <body>
     <link rel="stylesheet" href="./node_modules/bootstrap3/dist/css/bootstrap.min.css">
     <script>window.$ = window.jQuery = require('jquery');</script>
-   <script src = "bootstrap-datepicker.js"></script>
+    <script> require('bootstrap-datepicker');</script>
 
     <h1>Hello World!</h1>
     We are using node V 1.0.7
+    <br>
     <script>document.write(process.versions.node)</script>, Chrome
+    <br>
     <script>document.write(process.versions.chrome)</script>, and Electron
+    <br>
     <script>document.write(process.versions.electron)</script>.
-    <button class="btn">hello</button>
+
+
+    <button class="btn" id="update">更新</button>
 
 
     <div class="input-group date">
