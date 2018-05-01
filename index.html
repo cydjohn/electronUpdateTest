@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+</head>
+
+<body>
+    <link rel="stylesheet" href="./node_modules/bootstrap3/dist/css/bootstrap.min.css">
+    <script>window.$ = window.jQuery = require('jquery');</script>
+   <script src = "bootstrap-datepicker.js"></script>
+
+    <h1>Hello World!</h1>
+    We are using node
+    <!-- <script>document.write(process.versions.node)</script>, Chrome
+    <script>document.write(process.versions.chrome)</script>, and Electron
+    <script>document.write(process.versions.electron)</script>. -->
+    <button class="btn">hello</button>
+
+
+    <div class="input-group date">
+        <input type="text" class="form-control">
+        <span class="input-group-addon">
+            <i class="glyphicon glyphicon-th"></i>
+        </span>
+    </div>
+
+    <script>
+        $('.input-group.date').datepicker();
+    </script>
+
+
+</body>
+
+</html>

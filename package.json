@@ -1,0 +1,34 @@
+{
+  "name": "electron-test",
+  "version": "1.0.0",
+  "description": "MyApp",
+  "main": "main.js",
+  "authot": "cyd",
+  "productName": "MyApp",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "package": "npm-run-all package:*",
+    "package:mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --out=out --icon=assets/app-icon/mac/app.icns --osx-sign.identity='Developer ID Application: GitHub' --extend-info=assets/mac/info.plist",
+    "package:win": "electron-packager . --overwrite --platform=win32 --arch=ia32 --out=out",
+    "package:linux": "electron-packager . --overwrite --platform=linux --arch=x64 --out=out"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^1.8.6"
+  },
+  "dependencies": {
+    "ajv": "^6.4.0",
+    "bootstrap": "^3.1.0",
+    "bootstrap-datepicker": "^1.8.0",
+    "bootstrap3": "^3.3.5",
+    "datetimepicker": "^0.1.38",
+    "electron-builder": "^20.10.0",
+    "electron-packager": "^12.0.1",
+    "electron-winstaller": "^2.6.4",
+    "eonasdan-bootstrap-datetimepicker": "^4.17.47",
+    "jquery": "^2.2.4",
+    "moment": "^2.22.1",
+    "popper.js": "^1.14.3"
+  }
+}
