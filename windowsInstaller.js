@@ -5,10 +5,10 @@ resultPromise = electronInstaller.createWindowsInstaller({
     outputDirectory: './windows32',
     authors: 'cyd',
     exe: 'MyApp.exe',
-    noMsi: true,
+
     outputDirectory: path.join('./out/', 'windows-installer'),
     setupExe: 'ElectronAPIDemosSetup.exe',
-    skipUpdateIcon: true
+
   });
 
 resultPromise.then(() => console.log("It worked!"), (e) => console.log(`No dice: ${e.message}`));

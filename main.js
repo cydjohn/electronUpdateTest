@@ -1,4 +1,4 @@
-const {app, BrowserWindow,autoUpdater} = require('electron')
+const {app, BrowserWindow,autoUpdater, dialog} = require('electron')
   const path = require('path')
   const url = require('url')
 
@@ -60,7 +60,7 @@ const {app, BrowserWindow,autoUpdater} = require('electron')
 const server = 'https://hazel-server-npjnhmqmmx.now.sh'
 const feed = `${server}/update/${process.platform}/${app.getVersion()}`
 
-console.log(feed)
+// console.log(feed)
 autoUpdater.setFeedURL(feed)
 
 autoUpdater.checkForUpdates()
