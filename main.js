@@ -125,7 +125,7 @@ function handleSquirrelEvent() {
 const server = 'https://hazel-server-npjnhmqmmx.now.sh'
 const feed = `${server}/update/${process.platform}/${app.getVersion()}`
 
-console.log(feed)
+// console.log(feed)
 autoUpdater.setFeedURL(feed)
 
 autoUpdater.checkForUpdates()
