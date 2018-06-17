@@ -1,9 +1,9 @@
 {
-  "name": "electron-test",
+  "name": "electrontest",
   "version": "1.0.0",
   "description": "MyApp",
   "main": "main.js",
-  "authot": "cyd",
+  "author": "cyd",
   "productName": "MyApp",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -12,19 +12,21 @@
     "package:win": "electron-packager . --overwrite --platform=win32 --arch=ia32 --out=out",
     "package:linux": "electron-packager . --overwrite --platform=linux --arch=x64 --out=out",
     "pack": "electron-builder --dir",
-    "dist": "electron-builder -wm"
+    "dist": "electron-builder -w"
   },
   "license": "ISC",
   "devDependencies": {
     "electron": "^1.8.6",
-    "electron-builder": "^20.10.0"
+    "electron-builder": "^20.15.3"
   },
   "dependencies": {
     "ajv": "^6.4.0",
     "bootstrap": "^4.1.1",
     "bootstrap-datepicker": "^1.8.0",
     "bootstrap3": "^3.3.5",
-    "electron-packager": "^12.0.1",
+    "electron-packager": "^12.1.0",
+    "electron-squirrel-startup": "^1.0.0",
+    "electron-updater": "^2.21.10",
     "electron-winstaller": "^2.6.4",
     "jquery": "^3.3.1",
     "popper.js": "^1.14.3"
