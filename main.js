@@ -1,6 +1,6 @@
 if (require('electron-squirrel-startup')) return;
 
-const {app, BrowserWindow} = require('electron')
+const {app, BrowserWindow, dialog} = require('electron')
 const {autoUpdater } = require('electron')
 // import { autoUpdater } from "electron-updater"
 // this should be placed at top of main.js to handle setup events quickly
@@ -127,7 +127,7 @@ function handleSquirrelEvent() {
 const server = 'https://hazel-server-npjnhmqmmx.now.sh'
 const feed = `${server}/update/${process.platform}/${app.getVersion()}`
 
-// console.log(feed)
+console.log(feed)
 autoUpdater.setFeedURL(feed)
 
 autoUpdater.checkForUpdates()
